@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# macOS
+.DS_Store
+
+# Token and settings
+*.json
+!.github/
+!.vscode/
+
+# Virtual environments
+venv/
+.env
+
+# VSCode
+.vscode/

@@ -1,7 +1,8 @@
 from yandex_music import Client
 import re
+from typing import List
 
-def fetch_playlist_tracks(playlist_url: str) -> list[str]:
+def fetch_playlist_tracks(playlist_url: str) -> List[str]:
     """
     Берёт ссылку вида https://music.yandex.ru/users/USERNAME/playlists/PLAYLIST_ID
     Возвращает список строк "Исполнитель – Название".
@@ -12,7 +13,6 @@ def fetch_playlist_tracks(playlist_url: str) -> list[str]:
     user, playlist_id = m.group(1), m.group(2)
     client = Client().init()  # public API, без авторизации
     try:
-        # ВАЖНО: сначала playlist_id, потом user!
         pl = client.users_playlists(playlist_id, user)
         if not pl or not hasattr(pl, 'tracks'):
             raise Exception("Плейлист не найден или приватный")

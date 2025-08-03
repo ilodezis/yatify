@@ -1,0 +1,17 @@
+[project]
+name = "yatify"
+version = "0.1.0"
+description = "Перенос плейлистов из Яндекс.Музыки в Spotify"
+authors = [ { name = "ilodezis" } ]
+requires-python = ">=3.8"
+dependencies = [
+    "PyQt5",
+    "spotipy",
+    "requests",
+    "pytest",
+    "yandex-music"
+]
+
+[project.scripts]
+yatify-gui = "gui:main"
+yatify-cli = "cli:main"

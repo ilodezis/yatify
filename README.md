@@ -1,4 +1,4 @@
-# <img src="icon.icns" width="32" height="32"/> Yatify
+# <img src="icon.png" width="32" height="32"/> Yatify
 
 **RU | [EN](#english)**
 
@@ -45,7 +45,7 @@ pyinstaller --onedir --windowed --icon=icon.icns gui.py
 
 ---
 
-# <a name="english"></a><img src="icon.icns" width="32" height="32"/> Yatify
+# <a name="english"></a><img src="icon.png" width="32" height="32"/> Yatify
 
 Yatify — transfer playlists from Yandex Music to Spotify with a modern GUI (PyQt5) or CLI.
 
